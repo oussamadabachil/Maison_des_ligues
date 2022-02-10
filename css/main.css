@@ -22,9 +22,11 @@ header>.mobile{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 85%;
+    transition: all .3s;
+
 }
 
-.span_swicth_right{
+.switch_dc_comics>.span_swicth_right{
     position: absolute;
     width: 3rem;
     height: 3rem;
@@ -32,7 +34,8 @@ header>.mobile{
     border-radius: 100%;
     transform: translate(-50%,-50%);
     top: 50%;
-    right: 85%;
+    left: 15%;
+    transition: all .3s;
 }
 
 .switch_dc_comics{

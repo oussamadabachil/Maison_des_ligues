@@ -1,0 +1,59 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Just+Another+Hand&display=swap');
+html{
+    font-size: 62.5%; 
+/* 16px * 62,5 10.00rem */
+}
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(255,0,0,1) 100%);
+  font: 1.6rem sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+*{
+    box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
+}
+ul, 
+ol, 
+p,
+button,
+figure, 
+blockquote, h1, h2, h3, address{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+button{
+    background: transparent;
+    font-size: inherit;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.material-icons{
+    vertical-align: .5rem;
+    font-size: 3rem;
+}
+
+@font-face{
+    font-family: "Marvel";
+    src: url("../AmericanCaptain-MdEY.otf");
+  }
+
+@font-face{
+    font-family: "MarvelFont";
+    src: url("../MarvelRegular-Dj83.ttf");
+  }

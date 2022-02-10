@@ -1,0 +1,145 @@
+header>h1{
+    font-family: "Marvel";
+    color: black;
+    line-height: 6rem;
+    padding: 1rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 1rem auto;
+}
+
+header>.mobile{
+ display: none;
+
+}
+
+.switch_dc_comics>.span_swicth{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 85%;
+}
+
+.span_swicth_right{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    right: 85%;
+}
+
+.switch_dc_comics{
+    border-radius: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 12rem;
+    height: 4rem;
+    background-color: red;
+}
+.body_grayscale{
+    filter: grayscale(100%);
+}
+header>.desk{
+    display: block;
+    position: absolute;
+    top: 3.5rem;
+    left: 4rem;
+    max-width: 20rem;
+    height: 8rem;
+    background-color: rgb(0, 134, 101);
+}
+
+main>section>h2{
+    text-transform: uppercase;
+    font-family: "Marvel";
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+main>section>p{
+    text-align: justify;
+    max-width: 90rem;
+    padding: 5rem;
+    font-size: 1.7rem;
+    margin: 0 auto;
+}
+.grid{
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1rem;
+    max-width: 90%;
+    margin: 1rem auto;
+}
+.grid>li>img{
+    cursor: pointer;
+    transition: all .3s;
+
+}
+.grid>li>img:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+
+main>button{
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: aliceblue;
+    border: .1rem solid black;
+    transition: all .3s;
+    border-radius: .6rem;
+
+}
+main>button:hover{
+    background-color: rgb(221, 51, 42);
+    transition: all .3s;
+    color: white;
+}
+
+footer>p{text-align: center;padding: 1rem;}
+
+
+@media screen and (max-width: 90rem) {
+    header>.mobile{
+        display: block;
+        margin: 0 auto;
+        max-width: 20rem;
+        position: relative;
+       
+       }   
+       header>.desk{ 
+        display: none;
+        
+       }
+     
+       section>.grid{
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+    .grid>li:last-child{
+        width: 200%;
+        display: block;
+    }
+}

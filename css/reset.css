@@ -8,8 +8,9 @@ html{
 }
 .body{
 
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(255,0,0,1) 100%);
+    background: rgb(227,14,14);
+    background: radial-gradient(circle, rgba(227,14,14,1) 0%, rgba(43,43,43,0.32396708683473385) 100%);
+    
   font: 1.6rem sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -29,6 +30,7 @@ blockquote, h1, h2, h3, address{
     list-style: none;
     font-style: normal;
 }
+input{outline: none;}
 button{
     background: transparent;
     font-size: inherit;

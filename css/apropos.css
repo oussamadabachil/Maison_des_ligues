@@ -5,7 +5,7 @@ main>.grid{
 
 }
 header>h1{
-
+    font-size: 3rem;
     font-family: "Marvel";
     color: black;
     line-height: 6rem;
@@ -13,7 +13,6 @@ header>h1{
     text-align: center;
     max-width: 60rem;
     margin: 1rem auto;
-    font-size: 3rem;
 }
 fieldset{
     background-color: rgba(255, 255, 255, 0.363);

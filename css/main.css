@@ -26,6 +26,7 @@ header>.mobile{
 
 }
 .switch_anim{
+    display: none;
     transition: all .3s;
     position: absolute;
     top: 0;
@@ -142,6 +143,9 @@ header>.desk{
     max-width: 20rem;
     height:19rem;
 }
+main{
+    position: relative;
+}
 
 main>section>h2{
     text-transform: uppercase;
@@ -158,6 +162,7 @@ main>section>p{
     padding: 5rem;
     font-size: 1.7rem;
     margin: 0 auto;
+    font-family: sans-serif;
 }
 .grid{
     box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;

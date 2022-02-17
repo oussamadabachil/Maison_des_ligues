@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 let span_swicth_js = document.querySelector(".span_swicth")
 let swicth_div = document.querySelector(".switch_dc_comics")
 let button_js = document.querySelector("button")
-let func_switch_time = function(){
+let func_switch_time = ()=>{
     switch_anim.classList.remove("switch_anim_show")
     switch_anim.classList.add("switch_anim")
 
@@ -22,7 +22,7 @@ span_swicth_js.addEventListener("click",()=>{
     counter+=1
 
     if(counter%2==0){
-      
+        swicth_div.setAttribute("style","    background-color: red;  transition:all .3s;      ")
         logo_header_desk.setAttribute("src","./assets/marvel_icone.png")
         logo_header_mobile.setAttribute("src","./assets/marvel_icone.png")
         body_change.classList.remove("body_grayscale")
@@ -31,7 +31,7 @@ span_swicth_js.addEventListener("click",()=>{
         img_changing_js.setAttribute("src","./assets/marvel_icone.png")
 
     }else{
-       
+        swicth_div.setAttribute("style","    background-color: rgb(88,143,224);transition:all .3s;      ")
         body_change.classList.remove("body")
         body_change.classList.add("body_grayscale")
         

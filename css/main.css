@@ -6,6 +6,7 @@ header>h1{
     text-align: center;
     max-width: 60rem;
     margin: 1rem auto;
+    font-size: 3rem;
 }
 
 header>.mobile{
@@ -17,7 +18,7 @@ header>.mobile{
     position: absolute;
     width: 3rem;
     height: 3rem;
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 100%;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -35,7 +36,7 @@ header>.mobile{
     right: -200rem;
     width: 100%;
     z-index: 3;
-    background-color: white;
+    background-color: var(--white-color);
     height: 100vh;
 }
 .switch_anim_show{
@@ -47,7 +48,7 @@ header>.mobile{
     left: 0rem;
     width: 100%;
     z-index: 3;
-    background-color: white;
+    background-color: var(--white-color);
     height: 100vh;
 }
 .switch_anim_show>h2{
@@ -63,31 +64,7 @@ header>.mobile{
    
     width: 30rem;
 }
-.lds-dual-ring {
-    display: none;
-    width: 8rem;
-    height: 8rem;
-  }
-  .lds-dual-ring:after {
-    content: " ";
-    display: block;
-    width: 6.4rem;
-    height: 6.4rem;;
-    margin: .8rem;
-    border-radius: 50%;
-    border: .6rem solid rgb(0, 0, 0);
-    border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-  }
-  @keyframes lds-dual-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+
 
 .switch_anim_show>img{
 
@@ -103,7 +80,7 @@ header>.mobile{
     position: absolute;
     width: 3rem;
     height: 3rem;
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 100%;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -119,7 +96,7 @@ header>.mobile{
     right: 2rem;
     width: 12rem;
     height: 4rem;
-    background-color: red;
+    background-color:var(--red-color);
 }
 .switch_dc_comics_on{
      transition: all .3s;
@@ -129,10 +106,10 @@ header>.mobile{
     right: 2rem;
     width: 12rem;
     height: 4rem;
-    background-color: rgb(88,143,224);
+    background-color: var(--blue-color);
 }
 .body_grayscale{
-    background: rgb(88,143,224);
+    background-color: var(--blue-color);
 
     background: linear-gradient(0deg, rgba(88,143,224,1) 0%, rgba(255,255,255,1) 90%);}
 header>.desk{
@@ -157,7 +134,7 @@ main>section>h2{
 }
 
 main>section>p{
-    line-height: 1rem;
+    line-height: 2rem;
     text-align: justify;
     max-width: 90rem;
     padding: 5rem;
@@ -193,7 +170,7 @@ main>button{
     padding: 2rem;
     margin: 0 auto;
     max-width: 50%;
-    border: .1rem solid black;
+    border: .1rem solid rgb(0, 0, 0);
     transition: all .3s;
     border-radius: .6rem;
 
@@ -204,7 +181,7 @@ main>button:hover{
     color: white;
 }
 
-footer>p{text-align: center;padding: 1rem;}
+footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-serif;}
 
 
 @media screen and (max-width: 90rem) {

@@ -45,7 +45,7 @@ fieldset>form>input{
     padding: 2rem;
     border-radius: .4rem;
     border: .05rem solid #000000;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-color);
     padding: 1rem;
     width: 100%;
     margin: 0 auto 2rem;
@@ -61,7 +61,7 @@ fieldset>form>select{
     width: 100%;
     margin: 0 auto 2rem;
     height: 5rem;
-    border: .05rem solid #000000;
+    border: .05rem solid var(--black-color);
 }
 fieldset>form>input[type="submit"]{
     display: block;
@@ -79,9 +79,13 @@ fieldset>form>label{
 }
 
 main>button{
-    background-color: white;
+    background-color: var(--white-color);
 }
+.footer>p{
+    font-size: 2rem;
+    font-family: sans-serif;
 
+}
 
 @media screen and (max-width: 90rem) {
     main>.grid{

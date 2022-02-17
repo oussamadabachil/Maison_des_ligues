@@ -18,7 +18,14 @@ html{
 *{
     box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
 }
-ul, 
+
+:root {
+    --red-color: rgb(221, 51, 42);
+    --white-color: rgb(255,255,255);
+    --black-color: rgb(0, 0, 0);
+    --blue-color:  rgb(88,143,224);
+
+  }ul, 
 ol, 
 p,
 button,

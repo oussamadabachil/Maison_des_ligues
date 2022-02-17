@@ -87,6 +87,7 @@ header>.mobile{
     }
   }
   
+
 .switch_anim_show>img{
 
     top: 70%;
@@ -202,6 +203,19 @@ footer>p{text-align: center;padding: 1rem;}
 
 
 @media screen and (max-width: 90rem) {
+    .switch_anim_show>h2>.bullet{
+        text-align: center;
+    }
+    .switch_anim_show>h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "Marvel";
+        font-size: 2rem;
+        white-space: nowrap;
+    
+    }
     body{
         height: 100vh;
     }

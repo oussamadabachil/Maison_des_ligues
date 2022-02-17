@@ -202,6 +202,9 @@ footer>p{text-align: center;padding: 1rem;}
 
 
 @media screen and (max-width: 90rem) {
+    body{
+        height: 100vh;
+    }
     .switch_dc_comics{
         transform: rotate(90deg);
         top: 6rem;

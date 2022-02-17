@@ -6,6 +6,7 @@ html{
 /* 16px * 62,5 10.00rem */
 }
 .body{
+    overflow-x: hidden;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(255,0,0,1) 100%);
   font: 1.6rem sans-serif;

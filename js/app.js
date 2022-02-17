@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded",()=>{
 let span_swicth_js = document.querySelector(".span_swicth")
 let swicth_div = document.querySelector(".switch_dc_comics")
-
+let button_js = document.querySelector("button")
 let func_switch_time = function(){
     switch_anim.classList.remove("switch_anim_show")
     switch_anim.classList.add("switch_anim")
 
 }
+button_js.addEventListener("click",()=>{
+    window.location="./a_propos.html"
+})
 let body_change = document.querySelector(".body")
 let counter = 0;
 let switch_anim = document.querySelector(".switch_anim")

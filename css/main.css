@@ -157,6 +157,7 @@ main>section>h2{
 }
 
 main>section>p{
+    line-height: 1rem;
     text-align: justify;
     max-width: 90rem;
     padding: 5rem;

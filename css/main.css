@@ -330,3 +330,28 @@ footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-seri
         display: block;
     }
 }
+
+
+@media screen and (max-width: 70rem) {
+
+
+    .grid>li>div:hover ul,.grid_2>li>div:hover ul{
+
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        transition: all .3s;
+    }
+    .grid>li>div>ul>li>a{
+        font-size: .8rem;
+    }
+    .grid>li>div>ul>li>a:hover,.grid_2>li>div>ul>li>a:hover{
+        transform: scale(1.1);
+        border-radius: .3rem;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        transition: all .3s;
+    }
+
+}

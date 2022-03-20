@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 let span_swicth_js = document.querySelector(".span_swicth")
 let swicth_div = document.querySelector(".switch_dc_comics")
 let button_js = document.querySelector("button")
+let button_class = document.querySelector(".button_form")
 let func_switch_time = ()=>{
     switch_anim.classList.remove("switch_anim_show")
     switch_anim.classList.add("switch_anim")
@@ -17,11 +18,17 @@ let img_changing_js = document.querySelector(".logo_changing")
 
 let logo_header_desk = document.querySelector("header > .desk")
 let logo_header_mobile = document.querySelector("header > .mobile")
-
+document.querySelector(".grid_2").style.display="none"
 span_swicth_js.addEventListener("click",()=>{
     counter+=1
 
     if(counter%2==0){
+        button_class.classList.remove("button_form_dc")
+
+        button_class.classList.add("button_form")
+        document.querySelector(".grid").style.display="grid"
+        document.querySelector(".grid_2").style.display="none"
+
         swicth_div.setAttribute("style","    background-color: red;  transition:all .3s;      ")
         logo_header_desk.setAttribute("src","./assets/marvel_icone.png")
         logo_header_mobile.setAttribute("src","./assets/marvel_icone.png")
@@ -31,9 +38,16 @@ span_swicth_js.addEventListener("click",()=>{
         img_changing_js.setAttribute("src","./assets/marvel_icone.png")
 
     }else{
+        button_class.classList.remove("button_form")
+
+        button_class.classList.add("button_form_dc")
+
         swicth_div.setAttribute("style","    background-color: rgb(88,143,224);transition:all .3s;      ")
         body_change.classList.remove("body")
         body_change.classList.add("body_grayscale")
+        document.querySelector(".grid_2").style.display="grid"
+        document.querySelector(".grid").style.display="none"
+
         
         logo_header_desk.setAttribute("src","./assets/DC_Comics_logo.png")
         logo_header_mobile.setAttribute("src","./assets/DC_Comics_logo.png")

@@ -13,6 +13,10 @@ header>.mobile{
  display: none;
 
 }
+.grid>li,.grid_2>li{
+    position: relative;
+}
+
 
 .switch_dc_comics>.span_swicth{
     position: absolute;
@@ -108,10 +112,7 @@ header>.mobile{
     height: 4rem;
     background-color: var(--blue-color);
 }
-.body_grayscale{
-    background-color: var(--blue-color);
 
-    background: linear-gradient(0deg, rgba(88,143,224,1) 0%, rgba(255,255,255,1) 90%);}
 header>.desk{
     display: block;
     position: absolute;
@@ -142,7 +143,7 @@ main>section>p{
     margin: 0 auto;
     font-family: sans-serif;
 }
-.grid{
+.grid,.grid_2{
     box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;
     padding: 1rem;
     display: grid;
@@ -151,18 +152,107 @@ main>section>p{
     max-width: 90%;
     margin: 1rem auto;
 }
-.grid>li>img{
+.grid>li>img,.grid_2>li>img{
     cursor: pointer;
     transition: all .3s;
 
 }
-.grid>li>img:hover{
-    transform: scale(1.2);
+/*
+.grid>li>div:hover ul>li:first-child{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 90%;
+
+}
+.grid>li>div>ul>li:first-child{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 110%;
+    width: 100%;
+
+}*/
+.grid>li>div:hover ul,.grid_2>li>div:hover ul{
+
+    opacity: 1;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transition: all .3s;
+}
+.grid>li>div>ul>li>a:hover,.grid_2>li>div>ul>li>a:hover{
+    transform: scale(1.1);
+    border-radius: .3rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
     transition: all .3s;
 }
 
 
-main>button{
+.grid>li>div:hover,.grid_2>li>div:hover{
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+.grid>li>div,.grid_2>li>div{
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(21, 155, 126, 0);
+}
+/*
+.grid>li>div>ul>li:first-child{
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: -50%;
+    transition: all .3s;
+}
+.grid>li>div>ul>li:last-child{
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transition: all .3s;
+}*/
+.grid>li>div>ul,.grid_2>li>div>ul{
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 100%;
+    left: 50%;
+    transition: all .3s;
+}
+.grid>li>div>ul>li>a,.grid_2>li>div>ul>li>a{
+    padding: .6rem;
+    transition: all .3s;
+
+    border-radius: .3rem;
+    background-color: rgb(255, 255, 255);
+}
+main>.button_form,main>.button_form_dc{
     cursor: pointer;
     display: block;
     border: none;
@@ -175,11 +265,18 @@ main>button{
     border-radius: .6rem;
 
 }
-main>button:hover{
+main>.button_form:hover{
     background-color: rgb(221, 51, 42);
     transition: all .3s;
     color: white;
 }
+
+main>.button_form_dc:hover{
+    background-color: var(--blue-color);
+    transition: all .3s;
+    color: white;
+}
+
 
 footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-serif;}
 
@@ -219,7 +316,7 @@ footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-seri
         
        }
      
-       section>.grid{
+       section>.grid,section>.grid_2{
         box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;
         padding: 1rem;
         display: grid;
@@ -228,7 +325,7 @@ footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-seri
         max-width: 90%;
         margin: 1rem auto;
     }
-    .grid>li:last-child{
+    .grid>li:last-child,.grid_2>li:last-child{
         width: 200%;
         display: block;
     }

@@ -8,13 +8,20 @@ html{
 }
 .body{
 
-    background: rgb(227,14,14);
-    background: radial-gradient(circle, rgba(227,14,14,1) 0%, rgba(43,43,43,0.32396708683473385) 100%);
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(43,43,43,0.32396708683473385) 100%);
     
   font: 1.6rem sans-serif;
   line-height: 1.6;
   margin: 0;
 }
+.body_grayscale{
+    background-color: var(--blue-color);
+  
+    font: 1.6rem sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(88,143,224,1) 0%, rgba(255,255,255,1) 90%);}
 *{
     box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
 }

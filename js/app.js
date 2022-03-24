@@ -72,8 +72,9 @@ span_swicth_js.addEventListener("click",()=>{
 
 console.log(navigator.userAgent);
 
-let el, modal, closed, open_modal, closed_all;
+let el, modal, closed, open_modal, closed_all,figure_this;
 
+figure_this = document.querySelector(".grid>li")
 el = document.querySelectorAll(".see_more");
 modal = document.querySelector(".parent-modale");
 closed = document.querySelector(".modale button");
@@ -84,7 +85,8 @@ closed_all = document.querySelector(".modale img");
 open_modal = function () {
     console.log(this.dataset);
     /* les variables */
-    let image = document.querySelector(".grid li").dataset.image;
+
+    let image = document.querySelectorAll(".grid>li")[4].dataset.image;
     let title = document.querySelector(".grid li").dataset.title;
     let desc = document.querySelector(".grid li").dataset.description;
     let dates = document.querySelector(".grid li").dataset.dates;

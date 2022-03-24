@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded",()=>{
 let span_swicth_js = document.querySelector(".span_swicth")
 let swicth_div = document.querySelector(".switch_dc_comics")
-let button_js = document.querySelector("button")
 let button_class = document.querySelector(".button_form")
 let func_switch_time = ()=>{
     switch_anim.classList.remove("switch_anim_show")
     switch_anim.classList.add("switch_anim")
 
 }
-button_js.addEventListener("click",()=>{
+/*
+button_class.addEventListener("click",()=>{
     window.location="./a_propos.html"
-})
+})*/
 let body_change = document.querySelector(".body")
 let counter = 0;
 let switch_anim = document.querySelector(".switch_anim")
@@ -69,6 +69,44 @@ span_swicth_js.addEventListener("click",()=>{
 
 
 
+
+console.log(navigator.userAgent);
+
+let el, modal, closed, open_modal, closed_all;
+
+el = document.querySelectorAll(".see_more");
+modal = document.querySelector(".parent-modale");
+closed = document.querySelector(".modale button");
+closed_all = document.querySelector(".modale img");
+
+/* property elements */
+
+open_modal = function () {
+    console.log(this.dataset);
+    /* les variables */
+    let image = document.querySelector(".grid li").dataset.image;
+    let title = document.querySelector(".grid li").dataset.title;
+    let desc = document.querySelector(".grid li").dataset.description;
+    let dates = document.querySelector(".grid li").dataset.dates;
+    modal.classList.add("modale-active"); /* ajouter la classe active */
+    /* sélectionner les sélecteurs html*/
+    document.querySelector(" #modaleid img").setAttribute("src", image);
+    document.querySelector("#modaleid .desc h3").innerText = title;
+    document.querySelector("#modaleid .desc p").innerHTML = `<strong>Déscription : </strong>${desc}`;
+    document.querySelector("#modaleid .desc time").innerText = `Annee ${dates}`;
+    document.querySelector("#modaleid .desc time").setAttribute("datetime", dates);
+};
+
+
+for (rows of el) {
+    rows.addEventListener("click", open_modal);
+}
+closed.addEventListener("click", () => {
+    modal.classList.remove("modale-active");
+});
+closed_all.addEventListener("click", () => {
+    modal.classList.remove("modale-active");
+});
 
 
 })

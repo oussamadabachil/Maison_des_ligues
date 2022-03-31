@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 let span_swicth_js = document.querySelector(".span_swicth")
 let swicth_div = document.querySelector(".switch_dc_comics")
 let button_class = document.querySelector(".button_form")
+let button_form_location  = document.querySelector("main>.button_form")
 let func_switch_time = ()=>{
     switch_anim.classList.remove("switch_anim_show")
     switch_anim.classList.add("switch_anim")
@@ -74,8 +75,7 @@ console.log(navigator.userAgent);
 
 let el, modal, closed, open_modal, closed_all,figure_this;
 
-figure_this = document.querySelector(".grid>li")
-el = document.querySelectorAll(".see_more");
+el = document.querySelectorAll("main ul li");
 modal = document.querySelector(".parent-modale");
 closed = document.querySelector(".modale button");
 closed_all = document.querySelector(".modale img");
@@ -83,13 +83,13 @@ closed_all = document.querySelector(".modale img");
 /* property elements */
 
 open_modal = function () {
-    console.log(this.dataset);
+    console.log(this.dataset.image);
     /* les variables */
 
-    let image = document.querySelectorAll(".grid>li")[4].dataset.image;
-    let title = document.querySelector(".grid li").dataset.title;
-    let desc = document.querySelector(".grid li").dataset.description;
-    let dates = document.querySelector(".grid li").dataset.dates;
+    let image = this.dataset.image;
+    let title = this.dataset.title;
+    let desc = this.dataset.description;
+    let dates = this.dataset.dates;
     modal.classList.add("modale-active"); /* ajouter la classe active */
     /* sélectionner les sélecteurs html*/
     document.querySelector(" #modaleid img").setAttribute("src", image);
@@ -101,14 +101,20 @@ open_modal = function () {
 
 
 for (rows of el) {
-    rows.addEventListener("click", open_modal);
+    rows.addEventListener("click", open_modal
+    );
+
 }
 closed.addEventListener("click", () => {
     modal.classList.remove("modale-active");
+
 });
 closed_all.addEventListener("click", () => {
     modal.classList.remove("modale-active");
 });
 
+button_form_location.addEventListener("click",()=>{
+    location.href="./a_propos.html"
+})
 
 })

@@ -213,7 +213,18 @@ main>section>p{
 
     
 }
-.grid>li:hover div>button:hover{
+.grid_2>li:hover div>button{
+    position: absolute;
+    top: 89%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    transition: all .3s;
+    visibility: visible;
+    opacity: 1;
+
+    
+}
+.grid>li:hover div>button:hover,.grid_2>li:hover{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     transition: all .3s;
@@ -456,3 +467,9 @@ footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-seri
     color: #333;
     cursor: pointer;
 }
+#peremodale>figure>.closed>.material-icon{
+    color: #fff;
+}
+
+.over{
+overflow-y: hidden;}

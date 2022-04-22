@@ -7,6 +7,11 @@ header img{
 
 }
 
+main{
+    display: block;
+    width: 100%;
+   }
+
 header h1 span{
    color:rgb( 126,83,251);
 }
@@ -125,9 +130,9 @@ section p{
 }
 
 
-ul{
-    max-width: 90%;
-    margin:2rem auto;
+main>ul{
+    max-width:100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -240,7 +245,7 @@ footer p{
         text-align: center;
     }
 
-    ul{
+    main>ul{
         max-width: 100%;
         margin:2rem auto;
         display: grid;
@@ -304,6 +309,20 @@ main ul li div button:last-child{
     border-radius: 1rem;
     background-color:rgb(255, 255, 255) ;
 }
-    
+div>form>input:last-child{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Montserrat;
+    cursor: pointer;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    max-width: 40rem;
+    border-radius: .7rem;
+    background-color:rgb( 126,83,251) ;
+
+}
 }
 

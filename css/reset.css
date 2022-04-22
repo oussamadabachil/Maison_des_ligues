@@ -27,8 +27,7 @@ body{
     --blue-color:  rgb(88,143,224);
 
   }
-ol, 
-p,
+ol, ul,p,
 button,
 figure, 
 blockquote, h1, h2, h3, address{

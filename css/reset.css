@@ -1,27 +1,21 @@
-/* reset css */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellota+Text:wght@300&family=Montserrat:wght@100;400;600;900&display=swap');
 html{
 
     font-size: 62.5%; 
 /* 16px * 62,5 10.00rem */
 }
-.body{
+body{
 
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(43,43,43,0.32396708683473385) 100%);
-    
-  font: 1.6rem sans-serif;
-  line-height: 1.6;
-  margin: 0;
-}
-.body_grayscale{
-    background-color: var(--blue-color);
-  
-    font: 1.6rem sans-serif;
+    background:#eeeded;
+    background-image: url(../assets/WallpaperDog-248128.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font: 1.6rem Montserrat;
     line-height: 1.6;
     margin: 0;
-    background: linear-gradient(0deg, rgba(88,143,224,1) 0%, rgba(255,255,255,1) 90%);}
+}
+
 *{
     box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
 }
@@ -32,7 +26,7 @@ html{
     --black-color: rgb(0, 0, 0);
     --blue-color:  rgb(88,143,224);
 
-  }ul, 
+  }
 ol, 
 p,
 button,
@@ -66,12 +60,3 @@ img{
     font-size: 3rem;
 }
 
-@font-face{
-    font-family: "Marvel";
-    src: url("../AmericanCaptain-MdEY.otf");
-  }
-
-@font-face{
-    font-family: "MarvelFont";
-    src: url("../MarvelRegular-Dj83.ttf");
-  }

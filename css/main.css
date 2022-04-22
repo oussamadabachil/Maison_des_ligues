@@ -1,475 +1,280 @@
-header>h1{
-    font-family: "Marvel";
-    color: black;
-    line-height: 6rem;
-    padding: 1rem;
-    text-align: center;
-    max-width: 60rem;
-    margin: 1rem auto;
-    font-size: 3rem;
-}
-
-header>.mobile{
- display: none;
+header img{
+    position: absolute;
+    height: 15rem;
+    max-width:15rem;
+    top: -1rem;
+    left: 1rem;
 
 }
-.grid>li,.grid_2>li{
+
+header h1 span{
+   color:rgb( 126,83,251);
+}
+header ul li a img{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    width: 3.5rem;
+    height:3.5rem;
+}
+header ul li:last-child a img{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: 3rem;
+    height:3rem;
+}
+header ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    width: 20rem;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 5rem;
+    height: 5rem;
+    background-color:rgb( 126,83,251)    ;
+}
+main ul li{
     position: relative;
 }
 
-
-.switch_dc_comics>.span_swicth{
+ main ul li:hover div{
     position: absolute;
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--white-color);
-    border-radius: 100%;
-    transform: translate(-50%,-50%);
+    box-shadow: rgba(126,83,251, 0.1) 0px 1px 1px 0px inset, rgba(126,83,251, 0.25) 0px 50px 100px -20px, rgba(126,83,251, 0.3) 0px 30px 60px -30px;
+    transition: all .3s;
+    width: 100%;
+    height: 100%;
+    left: 50%;
     top: 50%;
-    left: 85%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.596);
     transition: all .3s;
 
 }
-.switch_anim{
-    display: none;
-    transition: all .3s;
+
+main ul li div button{
+    font-family: Montserrat;
+    cursor: pointer;
     position: absolute;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    color: white;
+    width: 13rem;
+    border-radius: 1rem;
+    background-color:rgb( 126,83,251) ;
+}
+
+main ul li div button:last-child{
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    width: 13rem;
+    border-radius: 1rem;
+    background-color:rgb(255, 255, 255) ;
+}
+main ul li div{
+
+    position: absolute;
+    width: 10%;
+    height: 10%;
     opacity: 0;
     visibility: hidden;
-    right: -200rem;
-    width: 100%;
-    z-index: 3;
-    background-color: var(--white-color);
-    height: 100vh;
-}
-.switch_anim_show{
     transition: all .3s;
-    position: fixed;
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-    left: 0rem;
-    width: 100%;
-    z-index: 3;
-    background-color: var(--white-color);
-    height: 100vh;
-}
-.switch_anim_show>h2{
-    position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: "Marvel";
-    font-size: 3rem;
-
-}
-.logo_changing{
-   
-    width: 30rem;
-}
-
-
-.switch_anim_show>img{
-
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    display: block;
-    width: 20rem;
-    height: 20rem;
-}
-.switch_dc_comics>.span_swicth_right,.switch_dc_comics_on>.span_swicth_right{
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--white-color);
-    border-radius: 100%;
-    transform: translate(-50%,-50%);
     top: 50%;
-    left: 15%;
-    transition: all .3s;
+    transform: translate(-50%,-50%);
+    background-color: white;
 }
-
-.switch_dc_comics{
-    transition: all .3s;
-    border-radius: 2rem;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 12rem;
-    height: 4rem;
-    background-color:var(--red-color);
-}
-.switch_dc_comics_on{
-     transition: all .3s;
-    border-radius: 2rem;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 12rem;
-    height: 4rem;
-    background-color: var(--blue-color);
-}
-
-header>.desk{
-    display: block;
-    position: absolute;
-    top: 3.5rem;
-    left: 4rem;
-    max-width: 20rem;
-    height:19rem;
-}
-main{
-    position: relative;
-}
-
-main>section>h2{
+header h1{
     text-transform: uppercase;
-    font-family: "Marvel";
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    font-weight: 900;
     text-align: center;
-    padding: 1rem;
-    font-weight: 500;
+}
+
+
+section h2{ 
+    margin-top: 5rem;
+    font-weight: 600;
     font-size: 3rem;
-}
-
-main>section>p{
-    line-height: 2rem;
-    text-align: justify;
-    max-width: 90rem;
-    padding: 5rem;
-    font-size: 1.7rem;
-    margin: 0 auto;
-    font-family: sans-serif;
-}
-.grid,.grid_2{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 1rem;
-    max-width: 90%;
-    margin: 1rem auto;
-}
-.grid>li>img,.grid_2>li>img{
-    cursor: pointer;
-    transition: all .3s;
-
-}
-/*
-.grid>li>div:hover ul>li:first-child{
-    position: absolute;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 90%;
-
-}
-.grid>li>div>ul>li:first-child{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 110%;
-    width: 100%;
-
-}*/
-.grid>li>div:hover ul,.grid_2>li>div:hover ul{
-
-    opacity: 1;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    transition: all .3s;
-}
-.grid>li>div>ul>li>a:hover,.grid_2>li>div>ul>li>a:hover{
-    transform: scale(1.1);
-    border-radius: .3rem;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    transition: all .3s;
-}
-.grid>li>div:hover{
-    position: absolute;
-    top: 0;
-    transition: all .3s;
-
-    height: 100%;
-    width: 100%;
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(195,43,43,0.6041010154061625) 23%, rgba(246,54,54,0) 66%);
-    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(195,43,43,0.6041010154061625) 23%, rgba(246,54,54,0) 66%);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(195,43,43,0.6041010154061625) 23%, rgba(246,54,54,0) 66%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f63636",GradientType=1);
-}
-.grid>li:hover div>button{
-    position: absolute;
-    top: 89%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    transition: all .3s;
-    visibility: visible;
-    opacity: 1;
-
-    
-}
-.grid_2>li:hover div>button{
-    position: absolute;
-    top: 89%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    transition: all .3s;
-    visibility: visible;
-    opacity: 1;
-
-    
-}
-.grid>li:hover div>button:hover,.grid_2>li:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    transition: all .3s;
-}
-
-.grid_2>li>div:hover{
-    position: absolute;
-    top: 0;
-    transition: all .3s;
-
-    height: 100%;
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(44,159,149,0.5984768907563025) 22%, rgba(0,212,255,0.10547969187675066) 100%);}
-.grid>li>div,.grid_2>li>div{
-    transition: all .3s;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(222, 224, 54, 0);
-}
-/*
-.grid>li>div>ul>li:first-child{
-    opacity: 0;
     text-align: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: -50%;
-    transition: all .3s;
 }
-.grid>li>div>ul>li:last-child{
-    opacity: 0;
-    text-align: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    transition: all .3s;
-}*/
-.grid>li>div>ul,.grid_2>li>div>ul{
-    opacity: 0;
-    text-align: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 100%;
-    left: 50%;
-    transition: all .3s;
-}
-.grid>li>div>ul>li>a,.grid_2>li>div>ul>li>a{
-    padding: .6rem;
-    transition: all .3s;
 
-    border-radius: .3rem;
-    background-color: rgb(255, 255, 255);
-}
-main>.button_form,main>.button_form_dc{
-    cursor: pointer;
-    display: block;
-    border: none;
-    font-size: 2rem;
+
+
+
+section p{
+    max-width: 80%;
+    margin :0 auto;
+    font-size: 2.3rem;
     padding: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+ul{
+    max-width: 90%;
+    margin:2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+ul>li{
+    padding: 1rem;
+    list-style: none;
+    transition: all .3s;
+
+}
+
+ul>li>img{
+    position: relative;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+ul>li>img:hover{
+  /*  transform: scale(1.05);
+    box-shadow: rgba(126,83,251, 0.1) 0px 1px 1px 0px inset, rgba(126,83,251, 0.25) 0px 50px 100px -20px, rgba(126,83,251, 0.3) 0px 30px 60px -30px;
+    transition: all .3s;*/
+}
+
+
+.newsletter_button{
+    display: block;
+    font-family: Montserrat;
+    cursor: pointer;
     margin: 0 auto;
-    max-width: 50%;
-    border: .1rem solid rgb(0, 0, 0);
-    transition: all .3s;
-    border-radius: .6rem;
-
-}
-main>.button_form:hover{
-    background-color: rgb(221, 51, 42);
-    transition: all .3s;
+    padding: 2rem;
     color: white;
+    font-size: 2rem;
+    max-width: 40rem;
+    border-radius: 3rem;
+    background-color:rgb( 126,83,251) ;
 }
 
-main>.button_form_dc:hover{
-    background-color: var(--blue-color);
+div>.form_hidden{
     transition: all .3s;
-    color: white;
+
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    display: block;
+    margin: 1rem auto;
+    max-width: 0rem;
+    height: 4rem;
+    background-color: white;
+    box-shadow: rgba(126,83,251, 0.1) 0px 1px 1px 0px inset, rgba(126,83,251, 0.25) 0px 50px 100px -20px, rgba(126,83,251, 0.3) 0px 30px 60px -30px;
+
+
+}
+div>.form_shown{
+    border-radius: .8rem;
+    transition: all .3s;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    display: block;
+    margin: 1rem auto;
+    max-width: 50rem;
+    height: 24rem;
+    background-color: white;
+    box-shadow: rgba(126,83,251, 0.1) 0px 1px 1px 0px inset, rgba(126,83,251, 0.25) 0px 50px 100px -20px, rgba(126,83,251, 0.3) 0px 30px 60px -30px;
+
+
+}
+
+div>form>*{
+    display: block;
+    width: 90%;
+    margin: 1rem auto 1rem;
+    padding: 1.5rem;
+
+
 }
 
 
-footer>p{text-align: center;padding: 1rem;font-size: 2rem;font-family: sans-serif;}
+div>form>input::placeholder{
+    font-size: 1.5rem;
+    font-family: Montserrat;
+}
+div>form>input:last-child{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Montserrat;
+    cursor: pointer;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    max-width: 40rem;
+    border-radius: .7rem;
+    background-color:rgb( 126,83,251) ;
+
+}
+footer p{
+    text-align: center;
+}
 
 
-@media screen and (max-width: 90rem) {
-    .switch_anim_show>h2>.bullet{
+@media screen and (max-width:1000px){
+    
+    header h1{
+        text-transform: uppercase;
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        font-weight: 900;
         text-align: center;
     }
-    .switch_anim_show>h2{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-family: "Marvel";
-        font-size: 2rem;
-        white-space: nowrap;
-    
-    }
-    body{
-        height: 100vh;
-    }
-    .switch_dc_comics{
-        position: absolute;
-        transform: rotate(90deg);
-        top: -22rem;
-        right: -4rem;
-    }
-    header>.mobile{
-        display: block;
-        margin: 0 auto;
-        max-width: 20rem;
-        position: relative;
-       
-       }   
-       header>.desk{ 
-        display: none;
-        
-       }
-     
-       section>.grid,section>.grid_2{
-        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    background-color: black;
-        padding: 1rem;
+
+    ul{
+        max-width: 90%;
+        margin:2rem auto;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 1rem;
+    }
+    section h2{ 
+        margin-top: 5rem;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+    }
+    section p{
+
         max-width: 90%;
-        margin: 1rem auto;
+        margin :0 auto;
+        font-size: 1.8rem;
+        padding: 2rem;
+        font-weight: 400;
+        text-align: justify;
     }
-    .grid>li:last-child,.grid_2>li:last-child{
-        width: 200%;
-        display: block;
-    }
-}
-
-
-@media screen and (max-width: 70rem) {
-
-
-    .grid>li>div:hover ul,.grid_2>li>div:hover ul{
-
-        opacity: 1;
-        transform: translate(-50%,-50%);
-        top: 50%;
-        left: 50%;
-        transition: all .3s;
-    }
-    .grid>li>div>ul>li>a{
-        font-size: .8rem;
-    }
-    .grid>li>div>ul>li>a:hover,.grid_2>li>div>ul>li>a:hover{
-        transform: scale(1.1);
-        border-radius: .3rem;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        transition: all .3s;
-    }
-
-}
-
-/* modale */
-.parent-modale{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    opacity: 0;
-    z-index: -1;
-    transition: all 0.4s ease-in-out;
-}
-.parent-modale .modale{
-    max-width: 40vh;
-    padding: 1rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
-    z-index: 2;
+    
+    
+.newsletter_button{
+    display: block;
+    font-family: Montserrat;
     cursor: pointer;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    max-width: 40rem;
+    border-radius: 3rem;
+    background-color:rgb( 126,83,251) ;
+}
     
-    
-}
-.show_opacity>button{
-    transition: all .3s;
-    position: absolute;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-    top: 87%;
-    color: rgb(0, 0, 0);
-    width: 50%;
-    height: auto;
-    left: 50%;
-    opacity: 0;
-    visibility: hidden;
-    transform: translate(-50%,-50%);
-
-}
-.parent-modale .modale .desc{
-    position: static;
-    transition: none;
-    background-color: #fff;
-    color: #222;
-    
-}
-.modale-active{
-    z-index: 1;
-    opacity: 1;
-    transform-origin: center center;
-}
-.parent-modale .modale .desc h3{
-    font-size: x-large;
-    font-weight: 400;
-    background-color: #222;
-    color: #fff;
-    padding: 1rem;
-}
-.parent-modale .modale .desc p :is(time){
-    padding: 1rem;
-}
-.parent-modale .modale button{
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    z-index: 2;
-    color: #333;
-    cursor: pointer;
-}
-#peremodale>figure>.closed>.material-icon{
-    color: #fff;
 }
 
-.over{
-overflow-y: hidden;}

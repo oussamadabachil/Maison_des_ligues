@@ -4,9 +4,25 @@ html{
     font-size: 62.5%; 
 /* 16px * 62,5 10.00rem */
 }
-body{
 
+.body{
     background:#eeeded;
+    transition: all .3s;
+
+    background-image: url(../assets/WallpaperDog-248128.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font: 1.6rem Montserrat;
+    line-height: 1.6;
+    margin: 0;
+}
+.body_dark{
+
+    transition: all .3s;
+
+    background:#000000;
+
     background-image: url(../assets/WallpaperDog-248128.jpg);    
     background-size: cover;
     background-repeat: no-repeat;

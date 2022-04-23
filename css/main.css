@@ -160,13 +160,14 @@ main ul li{
     vertical-align:middle;
     width: 4rem;
     height: 4rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    border-radius: 100%;
+    /*box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 100%;*/
 }
-main ul li div button{
+main ul li div button,main ul li div a{
     font-family: Montserrat;
     cursor: pointer;
     position: absolute;
+    text-align: center;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -385,6 +386,56 @@ footer .footer_white{
     text-align: center;
 }
 
+  
+section h2{
+    text-align: center;
+}
+section  fieldset legend {
+
+    font-family: Montserrat;
+    text-align: center;
+}
+fieldset form * {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+
+
+}
+fieldset{
+    display: block;
+    margin: 0 auto;
+    border: none;
+}fieldset form input{
+    border: none;
+    border-bottom: .1rem solid #cacaca;
+}
+
+
+fieldset form input:last-child{
+     background-color:rgb( 126,83,251)     ;
+     padding: 1rem;
+     margin-top: 1rem;
+     color: white;
+     font-family: Montserrat;
+     font-size: 1.3rem;
+     border-radius:1rem;
+}
+fieldset form select{
+    border: 0.2rem solid rgb(126 83 251 / 49%);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: white;
+}
+fieldset form{
+    margin: 0 auto;
+    border-radius: .3rem;
+    padding: 1rem;
+    display: block;
+    max-width: 80rem;
+    background-color: white;
+}
+
 
 
 @media screen and (max-width:1000px){
@@ -418,8 +469,7 @@ footer .footer_white{
         font-weight: 400;
         text-align: justify;
     }
-    
-    
+  
 .newsletter_button{
     font-family: Montserrat;
     cursor: pointer;
@@ -432,7 +482,7 @@ footer .footer_white{
     background-color:rgb( 126,83,251) ;
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;}
 
-main ul li div button{
+main ul li div button,main ul li div a{
     font-size: .8rem;
     font-family: Montserrat;
     cursor: pointer;

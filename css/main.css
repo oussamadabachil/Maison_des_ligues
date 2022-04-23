@@ -155,7 +155,7 @@ main ul li{
 .icon_close{
     cursor: pointer;
     position: absolute;
-    right: 0;
+    right: 1.5rem;
     align-items: center;
     vertical-align:middle;
     width: 4rem;
@@ -286,6 +286,7 @@ ul>li>img:hover{
 
 
 .newsletter_button{
+    transition: all .3s;
     display: block;
     font-family: Montserrat;
     cursor: pointer;
@@ -297,6 +298,23 @@ ul>li>img:hover{
     border-radius: 3rem;
     background-color:rgb( 126,83,251) ;
 }
+
+.newsletter_button:active{
+    transition: all .3s;
+    display: block;
+    font-family: Montserrat;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    font-size: 2rem;
+    max-width: 40rem;
+    border-radius: 3rem;
+    background-color:rgb( 126,83,251) ;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;}
+
+
+
 
 div>.form_hidden{
     transition: all .3s;

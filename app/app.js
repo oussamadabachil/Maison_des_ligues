@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded",()=>{
+    /*let el_button = document.querySelectorAll("main ul li div button:last-child");*/
+    let el= document.querySelectorAll("main ul li div button:last-child");
+
+    let modal = document.querySelector(".parent-modale");
+    let closed = document.querySelector(".modale button");
+    let closed_all = document.querySelector(".modale img");
+
     let opacity_div_menu = document.querySelector('.opacity_menu_off')
     let btn_js_app_show = document.querySelector('.icon_show')
     let btn_js_app_hide = document.querySelector('.icon_close')
@@ -6,11 +13,18 @@ document.addEventListener("DOMContentLoaded",()=>{
     let btn_form = document.querySelector(".newsletter_button")
     let menu_mobile = document.querySelector(".js_menu_mobile_hidden")
 
+
     let form_toggle = document.querySelector(".form_hidden")
     btn_form.addEventListener("click",()=>{
         form_toggle.classList.toggle("form_shown")
     })
 
+    opacity_div_menu.addEventListener('click',()=>{
+        menu_mobile.classList.remove('js_menu_mobile')
+        opacity_div_menu.classList.toggle('opacity_menu')
+
+        menu_mobile.classList.add('js_menu_mobile_hidden')
+    })
     btn_js_darkmode.addEventListener("click",()=>{
         document.querySelector(".body").classList.toggle('body_dark')
         document.querySelector('.h1').classList.toggle("h1_white")
@@ -38,6 +52,35 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     })
 
+    open_modal = function () {
+        console.log(this.dataset.image);
+        /* les variables */
+    
+        let image = this.dataset.image;
+        let title = this.dataset.title;
+        let desc = this.dataset.description;
+        let dates = this.dataset.dates;
+        modal.classList.add("modale-active"); /* ajouter la classe active */
+        /* sélectionner les sélecteurs html*/
+        document.querySelector(" #modaleid img").setAttribute("src", image);
+        document.querySelector("#modaleid .desc h3").innerText = title;
+        document.querySelector("#modaleid .desc p").innerHTML = `<strong>Déscription : </strong>${desc}`;
+        document.querySelector("#modaleid .desc time").innerText = `Annee ${dates}`;
+        document.querySelector("#modaleid .desc time").setAttribute("datetime", dates);
+    };
 
+for (rows of el) {
+    rows.addEventListener("click", open_modal);
+
+}
+closed.addEventListener("click", () => {
+    modal.classList.remove("modale-active");
+
+});
+closed_all.addEventListener("click", () => {
+    modal.classList.remove("modale-active");
+});
+
+    
 
 })
